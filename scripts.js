@@ -31,3 +31,24 @@ document.addEventListener('keydown', function(e) {
     playSound("#aj");
   }
 });
+
+// "Nice, ron"
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 78) {
+    playSound("#nr");
+  }
+});
+
+// sneeze
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 83) {
+    playSound("#sn");
+  }
+});
+
+// "What, I sneezed, I'm not allowed to sneeze?"
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 87) {
+    playSound("#ws");
+  }
+});
