@@ -75,3 +75,26 @@ input[type="checkbox"]{
   transform: scale(2);
   height: auto;
 }
+
+.legend-container{
+	padding-top: 10%;
+}
+
+.legend-container table{
+	font-size: 0.5em;
+	table-layout: fixed;
+	display: block;
+}
+
+.legend-container table th{
+	padding: 0.5em
+}
+
+.legend-container table td{
+	padding: 0.5em
+}
+
+.legend-container table caption{
+	text-align: center;
+	color: black;
+}
