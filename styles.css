@@ -17,6 +17,10 @@ center {
 	padding: 2.5%;
 }
 
+ul {
+	height: auto;
+}
+
 .infoText {
 	bottom: 0;
 	padding: 1em;

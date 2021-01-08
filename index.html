@@ -15,9 +15,9 @@
 			<div class="options-container">
 				<div class="options">
 					<input type="checkbox" id="overlap" onMouseOver="show_overlap()" onMouseOut="hide_overlap()">
-					<label for="overlap" style="padding-left: 0.5em; padding-right: 1em;" onMouseOver="show_overlap()" onMouseOut="hide_overlap()"> No Overlap Mode</label>
+					<label for="overlap" style="padding-left: 0.5em; padding-right: 1em;" onMouseOver="show_overlap()" onMouseOut="hide_overlap()"> No Overlap</label>
 					<input type="checkbox" id="alternate" onMouseOver="show_alternate()" onMouseOut="hide_alternate()">
-					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate Mode</label>
+					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate AA EE OOs</label>
 				</div>
 				<div id="options-help-overlap">
 					Stops the last sound before playing another one
@@ -26,7 +26,18 @@
 				</div>
 			</div>
 			<center>
-				<strong>Press 'A' for "AA", 'E' for "EE", 'O' for "OO", 'Spacebar' for "AUDIO JUNGLE", 'S' for sneeze, 'N' for "Nice, Ron" and 'W' for "What, I'm not allowed to sneeze?"</strong>
+				<ul>
+				<strong>Key binds</strong>
+				<li>A - AA</li>
+				<li>E - EE</li>
+				<li>O - OO</li>
+				<li>J - Audio Jungle</li>
+				<li>S - Sneeze</li>
+				<li>N - Nice, Ron</li>
+				<li>W - What, I'm not allowed to sneeze?</li>
+				<li>G - Gas</li>
+				<li>Spacebar - Stop all sounds</li>
+				<li>Esc - Enter hell</li>
 			</center>
 			<div class="infoText">
 				<center>
@@ -34,16 +45,17 @@
 				</center>
 			</div>
 		</div>
-		<audio src="./sounds/aa.mp3" id="aa" style="display: none;" controls>
-		<audio src="./sounds/ee.mp3" id="ee" style="display: none;" controls>
-		<audio src="./sounds/oo.mp3" id="oo" style="display: none;" controls>
-		<audio src="./sounds/aj.mp3" id="aj" style="display: none;" controls>
-		<audio src="./sounds/nr.mp3" id="nr" style="display: none;" controls>
-		<audio src="./sounds/sn.mp3" id="sn" style="display: none;" controls>
-		<audio src="./sounds/ws.mp3" id="ws" style="display: none;" controls>
-		<audio src="./sounds/aa_alt.mp3" id="aa_alt" style="display: none;" controls>
-		<audio src="./sounds/ee_alt.mp3" id="ee_alt" style="display: none;" controls>
-		<audio src="./sounds/oo_alt.mp3" id="oo_alt" style="display: none;" controls>
+		<audio src="./sounds/aa.mp3" id="aa" style="display: none;" controls></audio>
+		<audio src="./sounds/ee.mp3" id="ee" style="display: none;" controls></audio>
+		<audio src="./sounds/oo.mp3" id="oo" style="display: none;" controls></audio>
+		<audio src="./sounds/aj.mp3" id="aj" style="display: none;" controls></audio>
+		<audio src="./sounds/nr.mp3" id="nr" style="display: none;" controls></audio>
+		<audio src="./sounds/sneeze.mp3" id="sn" style="display: none;" controls></audio>
+		<audio src="./sounds/ws.mp3" id="ws" style="display: none;" controls></audio>
+		<audio src="./sounds/gas.mp3" id="gas" style="display: none;" controls></audio>
+		<audio src="./sounds/aa_alt.mp3" id="aa_alt" style="display: none;" controls></audio>
+		<audio src="./sounds/ee_alt.mp3" id="ee_alt" style="display: none;" controls></audio>
+		<audio src="./sounds/oo_alt.mp3" id="oo_alt" style="display: none;" controls></audio>
 		<script src="scripts.js"></script>
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8a624e372b2b42baa0649413c7246f5e"}'></script><!-- End Cloudflare Web Analytics -->
 	</body>

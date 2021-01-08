@@ -8,10 +8,22 @@ function playSound(soundSrc) {
 		var cloned = $("#" + soundSrc).clone()[0];
 
 		cloned.play();
-
+		cloned.classList.add('clone');
+		// console.log(cloned);
+		
+		// console.log(Object.getOwnPropertyNames(cloned));
 		cloned.onended = function() {
 			$(cloned).remove();
 		}
+		
+		 document.addEventListener('keydown', function(e) {
+			if (e.keyCode == 32) {
+				$(cloned).trigger("pause"); // Stop playing
+				$(cloned).remove();
+			}
+		 });
+		
+		// cloned[0].appendTo('body');
 	}
 }
 
@@ -49,8 +61,14 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 32) {
+  if (e.keyCode == 74) {
     playSound("aj");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 71) {
+    playSound("gas");
   }
 });
 
@@ -72,6 +90,24 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 87) {
     playSound("ws");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 32) {
+	$('audio').each(function(){
+		this.pause(); // Stop playing
+		this.currentTime = 0; // Reset time
+	}); 
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 27) {
+    $('audio').each(function(){
+		playSound(this.id);
+		// this.play();
+	}); 
   }
 });
 
