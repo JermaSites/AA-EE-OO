@@ -42,12 +42,13 @@ ul {
 	display: flex;
 	align-items: center;
 	position: relative;
+	text-align: center;
 }
 
 .options-container {
 	position: absolute;
     top: 0;
-    padding: 1em;
+    padding: 6vh;
 	height: auto;
 	display: flex;
 	align-items: center;
@@ -103,4 +104,9 @@ input[type="checkbox"]{
 tr {
 	cursor: pointer;
 	touch-action: manipulation;
+}
+
+svg {
+	width: 30vw;
+	max-width: 15vh;
 }
