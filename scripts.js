@@ -58,6 +58,18 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 48) {
+    playSound("zero");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 49) {
+    playSound("one");
+  }
+});
+
 // "Nice, ron"
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 78) {
