@@ -1,62 +1,48 @@
+var cloned = {};
 function playSound(soundSrc) {
+	if((soundSrc === "aa" || soundSrc === "ee" || soundSrc === "oo") && document.getElementById("alternate").checked) {
+		soundSrc = soundSrc + "_alt";
+	}
 	if (document.getElementById("overlap").checked) {
 		document.getElementById(soundSrc).pause();
 		document.getElementById(soundSrc).currentTime = 0;
 		document.getElementById(soundSrc).play();
 	}
 	else {
-		var cloned = $("#" + soundSrc).clone()[0];
-
-		cloned.play();
-		cloned.classList.add('clone');
-		// console.log(cloned);
-		
-		// console.log(Object.getOwnPropertyNames(cloned));
-		cloned.onended = function() {
-			$(cloned).remove();
-		}
-		
-		 document.addEventListener('keydown', function(e) {
+		var thisClone = Object.keys(cloned).length;
+		cloned[thisClone] = $("#" + soundSrc).clone()[0];
+		cloned[thisClone].play();
+		cloned[thisClone].classList.add('clone');
+		cloned[thisClone].onended = function() {
+			$(cloned[thisClone]).remove();
+			delete cloned[thisClone];
+		};
+		document.addEventListener('keydown', function(e) {
 			if (e.keyCode == 32) {
-				$(cloned).trigger("pause"); // Stop playing
-				$(cloned).remove();
+					cloned[thisClone].pause(); // Stop playing
+					$(cloned[thisClone]).remove();
+					delete cloned[thisClone];
+				}
 			}
-		 });
-		
-		// cloned[0].appendTo('body');
+		 );
 	}
 }
 
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 65){
-	if (document.getElementById("alternate").checked) {
-		playSound("aa_alt");
-	}
-	else {
-		playSound("aa");
-	}  
+	playSound("aa");
   }
 });
 
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 69) {
-    if (document.getElementById("alternate").checked) {
-		playSound("ee_alt");
-	}
-	else {
-		playSound("ee");
-	}  
+    playSound("ee");
   }
 });
 
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 79) {
-    if (document.getElementById("alternate").checked) {
-		playSound("oo_alt");
-	}
-	else {
-		playSound("oo");
-	}  
+	playSound("oo");
   }
 });
 
@@ -125,3 +111,20 @@ function show_overlap() {
 function hide_overlap() {
 	document.getElementById("options-help-overlap").style.display = "none";
 }
+
+$( "tr" ).click(function() {
+  if($(this).attr('class') === 'all') {
+	$('audio').each(function(){
+		playSound(this.id);
+		// this.play();
+	}); 
+  } else if($(this).attr('class') === 'spacebar') {
+	for(var i = 0; Object.keys(cloned).length; i++) {
+		$(cloned[i]).trigger("pause"); // Stop playing
+		$(cloned[i]).remove();
+		delete cloned[i];
+	}
+  } else {
+	playSound($(this).attr('class'));
+  }
+});
