@@ -1,5 +1,9 @@
 name: Deploy my website
-on: push
+on:
+  push:
+    branches:    
+      # Push events on master branch
+      - main
 
 jobs:
   deploy:
