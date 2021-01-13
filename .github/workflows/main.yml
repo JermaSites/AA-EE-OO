@@ -1,9 +1,6 @@
-name: Deploy my website
+name: Purge Cloudflare Cache
 on:
-  push:
-    branches:    
-      # Push events on master branch
-      - main
+  page_build
 
 jobs:
   deploy:
