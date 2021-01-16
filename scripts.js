@@ -116,6 +116,12 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 67) {
+    playSound("ooey");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
   if (e.keyCode == 32) {
 	$('audio').each(function(){
 		this.pause(); // Stop playing
