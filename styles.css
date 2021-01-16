@@ -49,27 +49,24 @@ ul {
 .options-container {
 	position: absolute;
     top: 0;
-    padding: 6vh;
+    padding: 1vh;
 	height: auto;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 }
 
-.options  > *{
-}
-
 #options-help-overlap {
 	font-size: 0.5em;
 	font-family: 'Open Sans', sans-serif;
-	padding: 1em;
+	padding: 0.5em;
 	display: none;
 }
 
 #options-help-alternate {
 	font-size: 0.5em;
 	font-family: 'Open Sans', sans-serif;
-	padding: 1em;
+	padding: 0.5em;
 	display: none;
 }
 
