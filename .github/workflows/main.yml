@@ -1,5 +1,6 @@
-name: Deploy my website
-on: push
+name: Purge Cloudflare Cache
+on:
+  page_build
 
 jobs:
   deploy:
