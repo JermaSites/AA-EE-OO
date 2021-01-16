@@ -92,6 +92,30 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 84) {
+    playSound("eeeuuu");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 89) {
+    playSound("mmmnn");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 85) {
+    playSound("urae");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 73) {
+    playSound("ultra");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
   if (e.keyCode == 32) {
 	$('audio').each(function(){
 		this.pause(); // Stop playing

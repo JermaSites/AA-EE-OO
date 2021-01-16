@@ -79,7 +79,7 @@ input[type="checkbox"]{
 }
 
 .legend-container{
-	height: auto;
+	height: 80%;
 }
 
 .legend-container table{
