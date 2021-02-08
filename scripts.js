@@ -79,7 +79,7 @@ document.addEventListener('keydown', function(e) {
 
 // sneeze
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 83) {
+  if (e.keyCode == 66) {
     playSound("sn");
   }
 });
@@ -98,7 +98,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 89) {
+  if (e.keyCode == 77) {
     playSound("mmmnn");
   }
 });
@@ -136,6 +136,24 @@ document.addEventListener('keydown', function(e) {
 		playSound(this.id);
 		// this.play();
 	}); 
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 89){
+	playSound("ayaya");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 83){
+	playSound("sphee");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 72){
+	playSound("whathappened");
   }
 });
 
