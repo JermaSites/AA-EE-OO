@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 #container {
 	width: 100%;
@@ -11,7 +11,7 @@
 	justify-content: center;
 	flex-direction: column;
 	font-size: 4.5vh;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 center {
@@ -28,7 +28,7 @@ ul {
 	height: auto;
 	position: absolute;
 	font-size: 0.5em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 * {
@@ -39,7 +39,7 @@ ul {
 
 .options {
 	font-size: 0.5em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	display: flex;
 	align-items: center;
 	position: relative;
@@ -58,14 +58,14 @@ ul {
 
 #options-help-overlap {
 	font-size: 0.5em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	padding: 0.5em;
 	display: none;
 }
 
 #options-help-alternate {
 	font-size: 0.5em;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	padding: 0.5em;
 	display: none;
 }

@@ -18,7 +18,7 @@ function playSound(soundSrc) {
 			delete cloned[thisClone];
 		};
 		document.addEventListener('keydown', function(e) {
-			if (e.keyCode == 32) {
+			if (e.key == " ") {
 					cloned[thisClone].pause(); // Stop playing
 					$(cloned[thisClone]).remove();
 					delete cloned[thisClone];
@@ -29,100 +29,100 @@ function playSound(soundSrc) {
 }
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 65){
+  if (e.key == "a"){
 	playSound("aa");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 69) {
+  if (e.key == "e") {
     playSound("ee");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 79) {
+  if (e.key == "o") {
 	playSound("oo");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 74) {
+  if (e.key == "j") {
     playSound("aj");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 71) {
+  if (e.key == "g") {
     playSound("gas");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 48) {
+  if (e.key == "0") {
     playSound("zero");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 49) {
+  if (e.key == "1") {
     playSound("one");
   }
 });
 
 // "Nice, ron"
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 82) {
+  if (e.key == "r") {
     playSound("nr");
   }
 });
 
 // sneeze
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 66) {
+  if (e.key == "b") {
     playSound("sn");
   }
 });
 
 // "What, I sneezed, I'm not allowed to sneeze?"
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 87) {
+  if (e.key == "w") {
     playSound("ws");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 84) {
+  if (e.key == "t") {
     playSound("eeeuuu");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 77) {
+  if (e.key == "m") {
     playSound("mmmnn");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 85) {
+  if (e.key == "i") {
     playSound("urae");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 73) {
+  if (e.key == "u") {
     playSound("ultra");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 67) {
+  if (e.key == "c") {
     playSound("ooey");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 32) {
+  if (e.key == " ") {
 	$('audio').each(function(){
 		this.pause(); // Stop playing
 		this.currentTime = 0; // Reset time
@@ -131,7 +131,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 27) {
+  if (e.key == "Escape") {
     $('audio').each(function(){
 		playSound(this.id);
 		// this.play();
@@ -140,25 +140,25 @@ document.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 89){
+  if (e.key == "y"){
 	playSound("ayaya");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 83){
+  if (e.key == "s"){
 	playSound("sphee");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 72){
+  if (e.key == "h"){
 	playSound("whathappened");
   }
 });
 
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 78){
+  if (e.key == "n"){
 	playSound("nya");
   }
 });
