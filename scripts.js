@@ -72,7 +72,7 @@ document.addEventListener('keydown', function(e) {
 
 // "Nice, ron"
 document.addEventListener('keydown', function(e) {
-  if (e.keyCode == 78) {
+  if (e.keyCode == 82) {
     playSound("nr");
   }
 });
@@ -154,6 +154,12 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('keydown', function(e) {
   if (e.keyCode == 72){
 	playSound("whathappened");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.keyCode == 78){
+	playSound("nya");
   }
 });
 
