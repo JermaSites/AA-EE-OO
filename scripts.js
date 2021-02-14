@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 			playSound(this.id);
 			// this.play();
 		});
-	} else {
+	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c'].indexOf(e.key) >= 0) {
 		playSound(e.key);
 	}
 });
@@ -63,7 +63,7 @@ $( "tr" ).click(function() {
 	$('audio').each(function(){
 		playSound(this.id);
 		// this.play();
-	}); 
+	});
 	} else if($(this).attr('class') === 'spacebar') {
 	for(var i = 0; Object.keys(cloned).length; i++) {
 		$(cloned[i]).trigger("pause"); // Stop playing
@@ -71,6 +71,6 @@ $( "tr" ).click(function() {
 		delete cloned[i];
 	}
 	} else {
-	playSound($(this).attr('class'));
+		playSound($(this).attr('class'));
 	}
 });
