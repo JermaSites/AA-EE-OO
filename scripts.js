@@ -1,6 +1,6 @@
 var cloned = {};
 function playSound(soundSrc) {
-	if((soundSrc === "aa" || soundSrc === "ee" || soundSrc === "oo") && document.getElementById("alternate").checked) {
+	if((soundSrc === "a" || soundSrc === "e" || soundSrc === "o") && document.getElementById("alternate").checked) {
 		soundSrc = soundSrc + "_alt";
 	}
 	if (document.getElementById("overlap").checked) {
@@ -19,148 +19,28 @@ function playSound(soundSrc) {
 		};
 		document.addEventListener('keydown', function(e) {
 			if (e.key == " ") {
-					cloned[thisClone].pause(); // Stop playing
-					$(cloned[thisClone]).remove();
-					delete cloned[thisClone];
-				}
+				cloned[thisClone].pause(); // Stop playing
+				$(cloned[thisClone]).remove();
+				delete cloned[thisClone];
 			}
-		 );
+		});
 	}
 }
 
 document.addEventListener('keydown', function(e) {
-  if (e.key == "a"){
-	playSound("aa");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "e") {
-    playSound("ee");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "o") {
-	playSound("oo");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "j") {
-    playSound("aj");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "g") {
-    playSound("gas");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "0") {
-    playSound("zero");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "1") {
-    playSound("one");
-  }
-});
-
-// "Nice, ron"
-document.addEventListener('keydown', function(e) {
-  if (e.key == "r") {
-    playSound("nr");
-  }
-});
-
-// sneeze
-document.addEventListener('keydown', function(e) {
-  if (e.key == "b") {
-    playSound("sn");
-  }
-});
-
-// "What, I sneezed, I'm not allowed to sneeze?"
-document.addEventListener('keydown', function(e) {
-  if (e.key == "w") {
-    playSound("ws");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "t") {
-    playSound("eeeuuu");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "m") {
-    playSound("mmmnn");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "i") {
-    playSound("urae");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "u") {
-    playSound("ultra");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "c") {
-    playSound("ooey");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == " ") {
-	$('audio').each(function(){
-		this.pause(); // Stop playing
-		this.currentTime = 0; // Reset time
-	}); 
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "Escape") {
-    $('audio').each(function(){
-		playSound(this.id);
-		// this.play();
-	}); 
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "y"){
-	playSound("ayaya");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "s"){
-	playSound("sphee");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "h"){
-	playSound("whathappened");
-  }
-});
-
-document.addEventListener('keydown', function(e) {
-  if (e.key == "n"){
-	playSound("nya");
-  }
+	if (e.key == " ") {
+		$('audio').each(function() {
+			this.pause(); // Stop playing
+			this.currentTime = 0; // Reset time
+		}); 
+	} else if (e.key == "Escape") {
+		$('audio').each(function(){
+			playSound(this.id);
+			// this.play();
+		});
+	} else {
+		playSound(e.key);
+	}
 });
 
 function show_alternate() {
@@ -179,18 +59,18 @@ function hide_overlap() {
 }
 
 $( "tr" ).click(function() {
-  if($(this).attr('class') === 'all') {
+	if($(this).attr('class') === 'all') {
 	$('audio').each(function(){
 		playSound(this.id);
 		// this.play();
 	}); 
-  } else if($(this).attr('class') === 'spacebar') {
+	} else if($(this).attr('class') === 'spacebar') {
 	for(var i = 0; Object.keys(cloned).length; i++) {
 		$(cloned[i]).trigger("pause"); // Stop playing
 		$(cloned[i]).remove();
 		delete cloned[i];
 	}
-  } else {
+	} else {
 	playSound($(this).attr('class'));
-  }
+	}
 });
