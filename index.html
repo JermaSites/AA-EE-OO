@@ -18,12 +18,12 @@
 					<input type="checkbox" id="overlap" onMouseOver="show_overlap()" onMouseOut="hide_overlap()">
 					<label for="overlap" style="padding-left: 0.5em; padding-right: 1em;" onMouseOver="show_overlap()" onMouseOut="hide_overlap()"> No Overlap</label>
 					<input type="checkbox" id="alternate" onMouseOver="show_alternate()" onMouseOut="hide_alternate()">
-					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate Sounds</label>
+					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate AA EE OOs</label>
 				</div>
 				<div id="options-help-overlap">
 					Stops the last sound before playing another one
 				</div><div id="options-help-alternate">
-					Plays alternative AA EE OO / Nice Ron sounds
+					Plays alternative AA EE OO sounds from the NYE stream
 				</div>
 			</div>
 			<div class="legend-container">
@@ -31,83 +31,79 @@
 					<thead class="table-light">
 						<caption><h3>Key Bindings</h3></caption>
 					</thead>
-					<tr class="aa">
+					<tr class="a">
 						<th scope="row">A</th>
 						<td>AA</td>
 					</tr>
-					<tr class="ee">
+					<tr class="e">
 						<th scope="row">E</th>
 						<td>EE</td>
 					</tr>
-					<tr class="oo">
+					<tr class="o">
 						<th scope="row">O</th>
 						<td>OO</td>
 					</tr>
-					<tr class="aj">
+					<tr class="j">
 						<th scope="row">J</th>
 						<td>Audio Jungle</td>
 					</tr>
-					<tr class="ayaya">
+					<tr class="y">
 						<th scope="row">Y</th>
 						<td>AYAYAYA</td>
 					</tr>
-					<tr class="sphee">
+					<tr class="s">
 						<th scope="row">S</th>
 						<td>Sphee</td>
 					</tr>
-					<tr class="nya">
+					<tr class="n">
 						<th scope="row">N</th>
 						<td>nya</td>
 					</tr>
-					<tr class="whathappened">
+					<tr class="h">
 						<th scope="row">H</th>
 						<td>What Happened?</td>
 					</tr>
-					<tr class="sn">
+					<tr class="b">
 						<th scope="row">B</th>
 						<td>Sneeze</td>
 					</tr>
-					<tr class="nr">
+					<tr class="r">
 						<th scope="row">R</th>
 						<td>Nice, Ron</td>
 					</tr>
-					<tr class="ws">
+					<tr class="w">
 						<th scope="row">W</th>
 						<td>What, I'm not allowed to sneeze?</td>
 					</tr>
-					<tr class="gas">
+					<tr class="g">
 						<th scope="row">G</th>
 						<td>Gas</td>
 					</tr>
-					<tr class="aHHHHhwaheha">
-						<th scope="row">.</th>
-						<td>aHHHHhwaheha</td>
-					</tr>
-					<tr class="zero">
+					<tr class="0">
 						<th scope="row">0</th>
 						<td>Zero</td>
 					</tr>
-					<tr class="one">
+					<tr class="1">
 						<th scope="row">1</th>
 						<td>One</td>
 					</tr>
-					<tr class="eeeuuu">
+					<tr class="t">
 						<th scope="row">T</th>
 						<td>EEEUUU</td>
 					</tr>
-					<tr class="mmmnn">
+					<tr class="m">
 						<th scope="row">M</th>
 						<td>mmmNN</td>
 					</tr>
-					<tr class="urae">
+					<tr class="i">
 						<th scope="row">I</th>
 						<td>urAE</td>
 					</tr>
-					<tr class="ultra">
+					<tr class="u">
 						<th scope="row">U</th>
 						<td>ULTRA!</td>
 					</tr>
-					<tr class="ooey">
+					<tr class="c">
 						<th scope="row">C</th>
 						<td>Ooey Gooey Cheesy!</td>
 					</tr>
@@ -123,35 +119,33 @@
 			</div>
 			<div class="infoText">
 				<center>
-					Made with ❤ by <a href="https://github.com/sticks-stuff">stick</a> and <a href="https://github.com/s-crypt">s-crypt</a>
+					Made with ❤ by <a href="https://twitter.com/stick_twt">stick</a> and <a href="https://github.com/s-crypt">s-crypt</a>
 				</center>
 			</div>
 		</div>
-		<audio src="./sounds/aa.mp3" id="aa" style="display: none;" controls></audio>
-		<audio src="./sounds/ee.mp3" id="ee" style="display: none;" controls></audio>
-		<audio src="./sounds/oo.mp3" id="oo" style="display: none;" controls></audio>
-		<audio src="./sounds/aj.mp3" id="aj" style="display: none;" controls></audio>
-		<audio src="./sounds/nr.mp3" id="nr" style="display: none;" controls></audio>
-		<audio src="./sounds/sneeze.mp3" id="sn" style="display: none;" controls></audio>
-		<audio src="./sounds/ws.mp3" id="ws" style="display: none;" controls></audio>
-		<audio src="./sounds/ws_alt.mp3" id="ws_alt" style="display: none;" controls></audio>
-		<audio src="./sounds/nr_alt.mp3" id="nr_alt" style="display: none;" controls></audio>
-		<audio src="./sounds/gas.mp3" id="gas" style="display: none;" controls></audio>
-		<audio src="./sounds/zero.mp3" id="zero" style="display: none;" controls></audio>
-		<audio src="./sounds/one.mp3" id="one" style="display: none;" controls></audio>
-		<audio src="./sounds/aa_alt.mp3" id="aa_alt" style="display: none;" controls></audio>
-		<audio src="./sounds/ee_alt.mp3" id="ee_alt" style="display: none;" controls></audio>
-		<audio src="./sounds/oo_alt.mp3" id="oo_alt" style="display: none;" controls></audio>
-		<audio src="./sounds/eeeuuu.mp3" id="eeeuuu" style="display: none;" controls></audio>
-		<audio src="./sounds/mmmnn.mp3" id="mmmnn" style="display: none;" controls></audio>
-		<audio src="./sounds/urae.mp3" id="urae" style="display: none;" controls></audio>
-		<audio src="./sounds/ultra.mp3" id="ultra" style="display: none;" controls></audio>
-		<audio src="./sounds/ayayaya.mp3" id="ayaya" style="display: none;" controls></audio>
-		<audio src="./sounds/sphee.mp3" id="sphee" style="display: none;" controls></audio>
-		<audio src="./sounds/whathappened.mp3" id="whathappened" style="display: none;" controls></audio>
-		<audio src="./sounds/ooey.mp3" id="ooey" style="display: none;" controls></audio>
-		<audio src="./sounds/nya.mp3" id="nya" style="display: none;" controls></audio>
-		<audio src="./sounds/aHHHHhwaheha.mp3" id="aHHHHhwaheha" style="display: none;" controls></audio>
+		<audio src="./sounds/aa.mp3" id="a" style="display: none;" controls></audio>
+		<audio src="./sounds/ee.mp3" id="e" style="display: none;" controls></audio>
+		<audio src="./sounds/oo.mp3" id="o" style="display: none;" controls></audio>
+		<audio src="./sounds/aj.mp3" id="j" style="display: none;" controls></audio>
+		<audio src="./sounds/ayayaya.mp3" id="y" style="display: none;" controls></audio>
+		<audio src="./sounds/sphee.mp3" id="s" style="display: none;" controls></audio>
+		<audio src="./sounds/nya.mp3" id="n" style="display: none;" controls></audio>
+		<audio src="./sounds/whathappened.mp3" id="h" style="display: none;" controls></audio>
+		<audio src="./sounds/sneeze.mp3" id="b" style="display: none;" controls></audio>
+		<audio src="./sounds/nr.mp3" id="r" style="display: none;" controls></audio>
+		<audio src="./sounds/ws.mp3" id="w" style="display: none;" controls></audio>
+		<audio src="./sounds/gas.mp3" id="g" style="display: none;" controls></audio>
+		<audio src="./sounds/zero.mp3" id="0" style="display: none;" controls></audio>
+		<audio src="./sounds/one.mp3" id="1" style="display: none;" controls></audio>
+		<audio src="./sounds/eeeuuu.mp3" id="t" style="display: none;" controls></audio>
+		<audio src="./sounds/mmmnn.mp3" id="m" style="display: none;" controls></audio>
+		<audio src="./sounds/urae.mp3" id="i" style="display: none;" controls></audio>
+		<audio src="./sounds/ultra.mp3" id="u" style="display: none;" controls></audio>
+		<audio src="./sounds/ooey.mp3" id="c" style="display: none;" controls></audio>
+		<audio src="./sounds/aa_alt.mp3" id="a_alt" style="display: none;" controls></audio>
+		<audio src="./sounds/ee_alt.mp3" id="e_alt" style="display: none;" controls></audio>
+		<audio src="./sounds/oo_alt.mp3" id="o_alt" style="display: none;" controls></audio>
+
 		<script src="scripts.js"></script>
 		<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8a624e372b2b42baa0649413c7246f5e"}'></script><!-- End Cloudflare Web Analytics -->
 	</body>
