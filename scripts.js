@@ -1,6 +1,6 @@
 var cloned = {};
 function playSound(soundSrc) {
-	if((soundSrc === "a" || soundSrc === "e" || soundSrc === "o") && document.getElementById("alternate").checked) {
+	if((soundSrc === "a" || soundSrc === "e" || soundSrc === "o" || soundSrc === "w" || soundSrc === "r") && document.getElementById("alternate").checked) {
 		soundSrc = soundSrc + "_alt";
 	}
 	if (document.getElementById("overlap").checked) {
@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 			playSound(this.id);
 			// this.play();
 		});
-	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c'].indexOf(e.key) >= 0) {
+	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c', 'l'].indexOf(e.key) >= 0) {
 		playSound(e.key);
 	}
 });

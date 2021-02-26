@@ -18,12 +18,12 @@
 					<input type="checkbox" id="overlap" onMouseOver="show_overlap()" onMouseOut="hide_overlap()">
 					<label for="overlap" style="padding-left: 0.5em; padding-right: 1em;" onMouseOver="show_overlap()" onMouseOut="hide_overlap()"> No Overlap</label>
 					<input type="checkbox" id="alternate" onMouseOver="show_alternate()" onMouseOut="hide_alternate()">
-					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate AA EE OOs</label>
+					<label for="alternate" style="padding-left: 0.5em;" onMouseOver="show_alternate()" onMouseOut="hide_alternate()"> Alternate Sounds</label>
 				</div>
 				<div id="options-help-overlap">
 					Stops the last sound before playing another one
 				</div><div id="options-help-alternate">
-					Plays alternative AA EE OO sounds from the NYE stream
+					Plays alternative AA EE OO / Nice Ron Sounds
 				</div>
 			</div>
 			<div class="legend-container">
@@ -79,10 +79,15 @@
 						<th scope="row">G</th>
 						<td>Gas</td>
 					</tr>
+					<tr class="l">
+						<th scope="row">.</th>
+						<td>aHHHHhwaheha</td>
+					</tr>
 					<tr class="0">
 						<th scope="row">0</th>
 						<td>Zero</td>
 					</tr>
+					<tr class="zero">
 					<tr class="1">
 						<th scope="row">1</th>
 						<td>One</td>
@@ -134,7 +139,10 @@
 		<audio src="./sounds/sneeze.mp3" id="b" style="display: none;" controls></audio>
 		<audio src="./sounds/nr.mp3" id="r" style="display: none;" controls></audio>
 		<audio src="./sounds/ws.mp3" id="w" style="display: none;" controls></audio>
+		<audio src="./sounds/ws_alt.mp3" id="w_alt" style="display: none;" controls></audio>
+		<audio src="./sounds/nr_alt.mp3" id="r_alt" style="display: none;" controls></audio>
 		<audio src="./sounds/gas.mp3" id="g" style="display: none;" controls></audio>
+		<audio src="./sounds/aHHHHhwaheha.mp3" id="l" style="display: none;" controls></audio>
 		<audio src="./sounds/zero.mp3" id="0" style="display: none;" controls></audio>
 		<audio src="./sounds/one.mp3" id="1" style="display: none;" controls></audio>
 		<audio src="./sounds/eeeuuu.mp3" id="t" style="display: none;" controls></audio>
