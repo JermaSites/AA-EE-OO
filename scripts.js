@@ -1,6 +1,6 @@
 var cloned = {};
 function playSound(soundSrc) {
-	if((soundSrc === "aa" || soundSrc === "ee" || soundSrc === "oo") && document.getElementById("alternate").checked) {
+	if((soundSrc === "aa" || soundSrc === "ee" || soundSrc === "oo" || soundSrc === "ws" || soundSrc === "nr") && document.getElementById("alternate").checked) {
 		soundSrc = soundSrc + "_alt";
 	}
 	if (document.getElementById("overlap").checked) {
@@ -154,6 +154,12 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('keydown', function(e) {
   if (e.key == "h"){
 	playSound("whathappened");
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key == "."){
+	playSound("aHHHHhwaheha");
   }
 });
 
