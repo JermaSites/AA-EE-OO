@@ -1,6 +1,6 @@
 var cloned = {};
-function playSound(soundSrc) {
-	if((soundSrc === "a" || soundSrc === "e" || soundSrc === "o" || soundSrc === "w" || soundSrc === "r") && document.getElementById("alternate").checked) {
+function playSound(soundSrc, shift) {
+	if((soundSrc === "a" || soundSrc === "e" || soundSrc === "o" || soundSrc === "w" || soundSrc === "r") && (document.getElementById("alternate").checked || shift)) {
 		soundSrc = soundSrc + "_alt";
 	}
 	if (document.getElementById("overlap").checked) {
@@ -35,11 +35,11 @@ document.addEventListener('keydown', function(e) {
 		}); 
 	} else if (e.key == "Escape") {
 		$('audio').each(function(){
-			playSound(this.id);
+			playSound(this.id, false);
 			// this.play();
 		});
 	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c', 'l', 'p'].indexOf(e.key) >= 0) {
-		playSound(e.key);
+		playSound(e.key, e.shiftKey);
 	}
 });
 
