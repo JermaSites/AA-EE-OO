@@ -38,7 +38,7 @@ document.addEventListener('keydown', function(e) {
 			playSound(this.id);
 			// this.play();
 		});
-	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c', 'l', 'p'].indexOf(e.key) >= 0) {
+	} else if(['a', 'e', 'o', 'j', 'y', 's', 'n', 'h', 'b', 'r', 'w', 'g', '0', '1', 't', 'm', 'i', 'u', 'c', 'l', 'p', 'x'].indexOf(e.key) >= 0) {
 		playSound(e.key);
 	}
 });
